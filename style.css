@@ -11,3 +11,7 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  bappichild
 */
+.site-description {
+	display: block;
+	margin-bottom: 18px;
+}
