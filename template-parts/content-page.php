@@ -11,7 +11,14 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<!-- TODO: If the typer library is somehow not working, just show the_title(); normally... -->
+
+		<!-- TODO: Do this also for blog titles.. -->
+		<h1 class="entry-title" id="entry-title"></h1>
+		<script type="module">
+			const entryTitle = document.getElementById("entry-title");
+			typer(entryTitle, 100).line('<?php echo get_the_title(); ?>');
+		</script>
 	</header><!-- .entry-header -->
 
 	<?php bappi_post_thumbnail(); ?>
