@@ -12,10 +12,25 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
+		# Hashing like this might not be necessary? Because we can just call the_ID()?
+		?>
+		<input type="hidden" id="entry-title-value-<?php echo sha1(get_the_title()); ?>" value="<?php echo get_the_title(); ?>">
+		<?php
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			?>
+			<h1 class="entry-title entry-title-typer" id="<?php echo sha1(get_the_title()); ?>"></h1>
+			<?php
 		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			?>
+			<h2 class="entry-title">
+				<a
+					class="entry-title-typer"
+					id="<?php echo sha1(get_the_title()); ?>"
+					href="<?php echo esc_url( get_permalink() ); ?>"
+					rel="bookmark">
+				</a>
+			</h2>
+			<?php
 		endif;
 
 		if ( 'post' === get_post_type() ) :

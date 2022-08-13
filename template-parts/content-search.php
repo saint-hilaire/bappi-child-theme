@@ -7,6 +7,7 @@
  * @package bappi
  */
 
+// TODO: This file might not even be necessary?
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
