@@ -6,9 +6,9 @@ body {
 
 button,
 textarea {
-	background: #0f110c;
-	border: 1px solid #b2df82;
-	color: #b2df82;
+	background: #f0f5ff !important;
+	border: 1px solid #1050e0 !important;
+	color: #1050e0 !important;
 	font-family: inherit;
 	font-size: 14px;
 	padding: 8px 10px;
@@ -16,27 +16,27 @@ textarea {
 
 
 a:visited {
-	color: #b2df82;
+	color: #1050e0 !important;
 	background: transparent !important;
 	background-color: transparent !important;
 }
 a {
 	background: transparent;
-	color: #b2df82;
+	color: #1050e0 !important;
 	line-height: 28px;
 }
 
 
 .entry-title {
-	background: #b2df82;
-	color: #0f110c;
+	background: #1050e0 !important;
+	color: #f0f5ff !important;
 	padding: 5px;
 	margin-bottom: 10px;
 	font-size: 22px;
 }
 .entry-title a,
 .entry-title a:hover {
-	color: #060c08;  /*??*/
+	color: #f0f5ff !important;  /*??*/
 }
 
 body,
@@ -48,8 +48,8 @@ pre,
 input,
 textarea,
 select {
-	color: #b2df82;
-	background-color: #060c08;  /*??*/
+	color: #1050e0 !important;
+	background-color: #f0f5ff !important;  /*??*/
 }
 // Reversed COlor
 a:focus,
@@ -61,14 +61,14 @@ a:hover,
 .comments-area .comments-title,
 .main-navigation.is-extended .sub-menu a:hover,
 .menu-toggle {
-	color: #060c08;  /*??*/
-	background-color: #b2df82;
+	color: #f0f5ff !important;  /*??*/
+	background-color: #1050e0 !important;
 }
 
 
 
 .site-header {
-	border-bottom: 2px solid #b2df82;
+	border-bottom: 2px solid #1050e0 !important;
 	padding-bottom: 30px;
 	margin-bottom: 30px;
 }
@@ -77,7 +77,7 @@ a:hover,
 
 .site-footer {
 	margin-top: 40px;
-	border-top: 2px solid #b2df82;
+	border-top: 2px solid #1050e0 !important;
 	padding: 40px 0;
 }
 
@@ -87,8 +87,8 @@ a:hover,
 input:focus,
 input {
 	background: transparent;
-	border: 1px solid #b2df82;
-	color: #b2df82;
+	border: 1px solid #1050e0 !important;
+	color: #1050e0 !important;
 	font-size: 13px;
 	padding: 8px 10px;
 	box-shadow: none;
@@ -101,7 +101,7 @@ input {
 a,
 .site-title a,
 .site-description {
-	color: #b2df82;
+	color: #1050e0 !important;
 	text-decoration: none;
 }
 
@@ -109,7 +109,7 @@ a,
 
 
 .submenu-controller:focus {
-	border: 1px dotted #b2df82;
+	border: 1px dotted #1050e0 !important;
 }
 
 
