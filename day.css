@@ -1,0 +1,134 @@
+/*
+body {
+	background-color: #f0f5ff !important;
+}
+ * */
+
+button,
+textarea {
+	background: #0f110c;
+	border: 1px solid #b2df82;
+	color: #b2df82;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 8px 10px;
+}
+
+
+a:visited {
+	color: #b2df82;
+	background: transparent !important;
+	background-color: transparent !important;
+}
+a {
+	background: transparent;
+	color: #b2df82;
+	line-height: 28px;
+}
+
+
+.entry-title {
+	background: #b2df82;
+	color: #0f110c;
+	padding: 5px;
+	margin-bottom: 10px;
+	font-size: 22px;
+}
+.entry-title a,
+.entry-title a:hover {
+	color: #060c08;  /*??*/
+}
+
+body,
+code,
+kbd,
+tt,
+var,
+pre,
+input,
+textarea,
+select {
+	color: #b2df82;
+	background-color: #060c08;  /*??*/
+}
+// Reversed COlor
+a:focus,
+a:hover,
+.entry .entry-title,
+.comment-form-comment label,
+.form-submit input[type="submit"],
+.widget_calendar caption,
+.comments-area .comments-title,
+.main-navigation.is-extended .sub-menu a:hover,
+.menu-toggle {
+	color: #060c08;  /*??*/
+	background-color: #b2df82;
+}
+
+
+
+.site-header {
+	border-bottom: 2px solid #b2df82;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+
+
+
+.site-footer {
+	margin-top: 40px;
+	border-top: 2px solid #b2df82;
+	padding: 40px 0;
+}
+
+
+
+
+input:focus,
+input {
+	background: transparent;
+	border: 1px solid #b2df82;
+	color: #b2df82;
+	font-size: 13px;
+	padding: 8px 10px;
+	box-shadow: none;
+	outline: none;
+}
+
+
+
+
+a,
+.site-title a,
+.site-description {
+	color: #b2df82;
+	text-decoration: none;
+}
+
+
+
+
+.submenu-controller:focus {
+	border: 1px dotted #b2df82;
+}
+
+
+
+
+
+/*
+ * Some more colors.......
+.wp-block-quote:not(.is-style-large),
+.wp-block-quote:not(.is-style-large) {
+	padding: 15px;
+	border-left: 5px solid #0073aa;
+}
+
+.wp-block-pullquote {
+	border-width: 2px;
+	padding: 1rem;
+	border-color: transparent;
+	border-top: 2px solid #555d66;
+	border-bottom: 2px solid #555d66;
+}
+ * */
