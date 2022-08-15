@@ -11,18 +11,18 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<input type="hidden" id="entry-title-value-<?php the_ID(); ?>" value="<?php the_title(); ?>">
+		<input type="hidden" id="entry-title-value-of-entry-<?php the_ID(); ?>" value="<?php the_title(); ?>">
 		<?php
 		if ( is_singular() ) :
 			?>
-			<h1 class="entry-title entry-title-typer" id="<?php the_ID(); ?>"></h1>
+			<h1 class="entry-title entry-title-typer" id="of-entry-<?php the_ID(); ?>"></h1>
 			<?php
 		else :
 			?>
 			<h2 class="entry-title">
 				<a
 					class="entry-title-typer"
-					id="<?php the_ID(); ?>"
+					id="of-entry-<?php the_ID(); ?>"
 					href="<?php echo esc_url( get_permalink() ); ?>"
 					rel="bookmark">
 				</a>

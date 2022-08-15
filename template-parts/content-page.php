@@ -16,8 +16,8 @@
 		?>
 		
 
-		<input type="hidden" id="entry-title-value-<?php the_ID(); ?>" value="<?php echo get_the_title(); ?>">
-		<h1 class="entry-title entry-title-typer" id="<?php the_ID(); ?>"></h1>
+		<input type="hidden" id="entry-title-value-of-entry-<?php the_ID(); ?>" value="<?php echo get_the_title(); ?>">
+		<h1 class="entry-title entry-title-typer" id="of-entry-<?php the_ID(); ?>"></h1>
 
 	</header><!-- .entry-header -->
 
