@@ -11,7 +11,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<!-- TODO: If the typer library is somehow not working, just show the_title(); normally... -->
+		<?php
+		# TODO: If the typer library is somehow not working, just show the_title(); normally...
+		?>
+		
 
 		<input type="hidden" id="entry-title-value-<?php the_ID(); ?>" value="<?php echo get_the_title(); ?>">
 		<h1 class="entry-title entry-title-typer" id="<?php the_ID(); ?>"></h1>

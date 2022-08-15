@@ -11,9 +11,6 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php
-		# Hashing like this might not be necessary? Because we can just call the_ID()?
-		?>
 		<input type="hidden" id="entry-title-value-<?php the_ID(); ?>" value="<?php the_title(); ?>">
 		<?php
 		if ( is_singular() ) :
