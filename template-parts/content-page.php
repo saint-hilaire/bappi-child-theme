@@ -13,8 +13,8 @@
 	<header class="entry-header">
 		<!-- TODO: If the typer library is somehow not working, just show the_title(); normally... -->
 
-		<input type="hidden" id="entry-title-value-<?php echo sha1(get_the_title()); ?>" value="<?php echo get_the_title(); ?>">
-		<h1 class="entry-title entry-title-typer" id="<?php echo sha1(get_the_title()); ?>"></h1>
+		<input type="hidden" id="entry-title-value-<?php the_ID(); ?>" value="<?php echo get_the_title(); ?>">
+		<h1 class="entry-title entry-title-typer" id="<?php the_ID(); ?>"></h1>
 
 	</header><!-- .entry-header -->
 

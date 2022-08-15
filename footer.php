@@ -35,8 +35,8 @@
 			var typerElems = document.getElementsByClassName("entry-title-typer");
 			var n = typerElems.length;
 			for(var i = 0; i < n; i++) {
-				var hashId = typerElems[i].id;
-				var entryTitle = document.getElementById("entry-title-value-" + hashId).value;
+				var postId = typerElems[i].id;
+				var entryTitle = document.getElementById("entry-title-value-" + postId).value;
 				typer(typerElems[i], 100).line(entryTitle);
 			}
 		</script>

@@ -14,18 +14,18 @@
 		<?php
 		# Hashing like this might not be necessary? Because we can just call the_ID()?
 		?>
-		<input type="hidden" id="entry-title-value-<?php echo sha1(get_the_title()); ?>" value="<?php echo get_the_title(); ?>">
+		<input type="hidden" id="entry-title-value-<?php the_ID(); ?>" value="<?php the_title(); ?>">
 		<?php
 		if ( is_singular() ) :
 			?>
-			<h1 class="entry-title entry-title-typer" id="<?php echo sha1(get_the_title()); ?>"></h1>
+			<h1 class="entry-title entry-title-typer" id="<?php the_ID(); ?>"></h1>
 			<?php
 		else :
 			?>
 			<h2 class="entry-title">
 				<a
 					class="entry-title-typer"
-					id="<?php echo sha1(get_the_title()); ?>"
+					id="<?php the_ID(); ?>"
 					href="<?php echo esc_url( get_permalink() ); ?>"
 					rel="bookmark">
 				</a>
