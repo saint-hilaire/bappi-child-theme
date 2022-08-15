@@ -83,6 +83,24 @@
 							));
 							?>
 
+							<?php
+							$day_night_uri = $_SERVER['REQUEST_URI'];
+							if( strpos($day_night_uri, "?") === false ) {
+								$day_night_uri .= "?";
+							} else {
+								$day_night_uri .= "&";
+							}
+							if(
+								isset($_SESSION['bappi_day_or_night']) &&
+								$_SESSION['bappi_day_or_night'] == 'day'
+							) {
+								$day_night_uri .= "bappi_day_or_night=night";
+							} else {
+								$day_night_uri .= "bappi_day_or_night=day";
+							}
+							?>
+
+							<a href="<?php echo $day_night_uri; ?>">Day/Night mode</a>
 						</nav><!-- #site-navigation -->
 					</div>
 				</div><!-- .site-branding -->
