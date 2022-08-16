@@ -49,15 +49,23 @@
 						<?php
 						if(!has_custom_logo()):
 							if (display_header_text()==true ):
+								?>
+								<pre class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php
+									echo ascii_banner(get_bloginfo('name')); ?></a></pre>
+								<?php
+								/*
 								if (is_front_page() && is_home()) :
 								?>
-									<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+									<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php
+										echo ascii_banner(get_bloginfo('name')); ?></a></h1>
 								<?php
 								else :
 								?>
-									<p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></p>
+									<p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php
+										echo ascii_banner(get_bloginfo('name')); ?></a></p>
 								<?php
 								endif;
+								* */
 							endif;
 						endif;
 						if (display_header_text()==true ):
