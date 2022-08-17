@@ -33,3 +33,22 @@ function bappi_child_enqueue_style() {
 	);
 }
 
+// Enqueues the typer library, for creating typewriter effect, which I've forked
+// and included as a submodule of this theme.
+add_action( 'wp_enqueue_scripts', 'bappi_child_enqueue_typer');
+function bappi_child_enqueue_typer() {
+	$theme = wp_get_theme();
+	wp_enqueue_style(
+		'typer-css',
+		get_stylesheet_directory_uri() . '/typer/src/typer.css',
+		array(),
+		$theme->get('Version')
+	);
+	wp_enqueue_script(
+		'typer-js',
+		get_stylesheet_directory_uri() . '/typer/src/typer.js',
+		array(),
+		$theme->get('Version'),
+		false
+	);
+}
