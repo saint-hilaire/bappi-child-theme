@@ -19,3 +19,7 @@
 .main-navigation {
 	margin-bottom: 100px;
 }
+
+a {
+	text-decoration: underline;
+}
